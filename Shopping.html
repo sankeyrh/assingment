@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Shopping</title>
+        <link rel="stylesheet" href="fonts/css/all.css">
+        <style>
+            header{
+                font-size: 30px;
+                text-align: center;
+                background-color: black;
+                color: gainsboro;
+                padding: 20px;
+                border-radius: 30px;
+            }
+            footer{
+                background-color: black;
+                color: gainsboro;
+                text-align: center;
+                font-style: italic;
+                border-radius: 30px;
+            }
+            section{
+                height: 500px;
+            }
+            .leftPanel{
+                width: 200px;
+                float: left;
+            }
+            .rightPanel{
+                width: 600px;
+                float: left;
+                margin-left: 50px;
+            }
+            ul{
+                list-style: none;
+            }
+            li{
+                border: 1px solid darkgray;
+                margin-top: 20px;
+                height: 40px;
+                text-align: left;
+                background-color: lightgray;
+                padding: 10px;
+            }
+            iframe{
+                border-style: none;
+            }
+            a{
+                text-decoration: none;
+            }
+            a:link{
+                color: black;
+            }
+            a:visited{
+                color:red;
+            }
+            a:active{
+                color: green;
+            }
+            a:hover{
+                text-decoration: underline;
+            }
+            li:hover{
+                background-color: white;
+                color: black;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <span class="fa fa-shopping-cart"></span> Online Shopping Site
+        </header>
+        <section>
+            <div class="leftPanel">
+                <ul>
+                    <li><span class="fa fa-home"></span> <a href="pages/home.html" target="frameBody">Home</a></li>
+                    <li><span class="fa fa-tv"></span> <a href="pages/electronics.html" target="frameBody">Electronics</a></li>
+                    <li><span class="fa fa-tshirt"></span> <a href="pages/fashion.html" target="frameBody">Fashion</a></li>
+                    <li><span class="fa fa-shoe-prints"></span> <a href="pages/footware.html" target="frameBody">Footware</a></li>
+                    <li><span class="fa fa-address-book"></span> <a href="pages/contact.html" target="frameBody">Contact Us</a></li>
+                    <li><span class="fa fa-video"></span> <a href="pages/unboxing.html" target="frameBody">Akash Unboxing Videos</a></li>
+                </ul>
+            </div>
+            <div class="rightPanel">
+                <iframe src="pages/home.html" width="1000" height="500" name="frameBody"></iframe>
+            </div>
+        </section>
+        <footer>
+            <div>
+                &copy;Copyright 2020
+            </div>
+            <div>
+                Electronics | Fashion | Footware | Unboxing
+            </div>
+        </footer>
+    </body>
+</html>
